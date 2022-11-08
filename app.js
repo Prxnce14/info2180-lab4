@@ -1,11 +1,13 @@
 window.onload = function()
 {
     const httpRequest = new XMLHttpRequest()
+    const element = document.querySelector(".btn")
     let myVar = "http://localhost/info2180-lab4/superheroes.php"
     httpRequest.onreadystatechange = temp
     httpRequest.open('Get', myVar)
     httpRequest.send()
 
+    element.addEventListener('click', console.log('clicked'), {once: true})
 
     function temp()
     {
@@ -21,6 +23,7 @@ window.onload = function()
             {
             alert('There was a problem with the request.');
             }
+
         }
     }
 }

@@ -1,0 +1,19 @@
+body
+{
+    background-color: grey;
+    width: 200rem
+}
+
+.Container
+{
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    margin: 1rem;
+}
+
+.btn
+{
+    background-color: grey;
+    border-color: grey;
+}
